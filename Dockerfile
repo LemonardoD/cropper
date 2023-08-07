@@ -13,4 +13,4 @@ RUN apt-get install -y ffmpeg
 RUN npm install
 COPY ./ ./
 
-CMD [ "node", "s.js" ]
+CMD ["npm", "run", "deploy"]
