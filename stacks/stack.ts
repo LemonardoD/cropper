@@ -12,11 +12,6 @@ export function FirstStack({ stack }: StackContext) {
 							external: ["fluent-ffmpeg"],
 						},
 					},
-					layers: [
-						new lambda.LayerVersion(stack, "ffmpegLayer", {
-							code: lambda.Code.fromAsset("layers/ffmpeg"),
-						}),
-					],
 				},
 				events: ["object_created"],
 			},
